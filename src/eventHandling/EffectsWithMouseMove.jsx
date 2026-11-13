@@ -14,10 +14,11 @@ export function EffectsWithMouseMove() {
 React.useEffect(()=>{
     document.addEventListener('mousemove',handleMousePosition)
 },[])
-
+const handleClick=(e)
   return (
     <div>
     <h1>MOUSE CORDINATES:</h1>
+    <button onClick={handleClick}></button>
     <div>X-Axis: {X}</div>
     <div>Y-Axis: {Y}</div>
 
